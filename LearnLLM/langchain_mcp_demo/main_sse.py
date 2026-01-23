@@ -1,0 +1,10 @@
+from LearnLLM.langchain_mcp_demo.mcp_tools import mcp_server
+
+if __name__ == '__main__':
+    mcp_server.run(
+        transport="sse",
+        host="localhost",
+        port=8080,
+        log_level="debug",
+        path = "/sse"
+    )
